@@ -1,5 +1,0 @@
-This is
-an example
-on how to read
-external input
-in Java.
