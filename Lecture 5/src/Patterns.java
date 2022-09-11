@@ -1,4 +1,3 @@
-import javax.crypto.Mac;
 
 public class Patterns {
 
