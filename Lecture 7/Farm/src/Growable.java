@@ -1,4 +1,3 @@
-package farm;
 
 public interface Growable {
 

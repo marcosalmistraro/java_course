@@ -1,6 +1,4 @@
 
-package farm;
-
 public class Rose extends Plant {
 
     public Rose(){

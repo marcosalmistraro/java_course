@@ -1,4 +1,3 @@
-package farm;
 
 public class Bee extends Animal {
 

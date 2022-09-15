@@ -1,4 +1,3 @@
-package farm;
 
 public abstract class Plant implements Growable{
 

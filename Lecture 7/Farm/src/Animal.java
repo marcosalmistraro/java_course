@@ -1,4 +1,3 @@
-package farm;
 
 public abstract class Animal implements Feedable{
 
@@ -25,5 +24,5 @@ public abstract class Animal implements Feedable{
 
     public boolean isHungry() {
         return this.isHungry;
-    }   
+    } 
 }

@@ -1,4 +1,3 @@
-package farm;
 
 public class Cow extends Animal{
 

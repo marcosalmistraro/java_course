@@ -29,7 +29,14 @@ public class MiniFarm {
         }
     }
 
-    public void sellPlants() {
+    public void sellPlant(Plant plant) {
+        if (plants.contains(plant)) {
+            bankAccount += plant.value;
+            plants.remove(plant);
+        }
+    }
+
+    public void sellAllPlants() {
         double sum = 0;
         for (Plant plant : plants) {
             if (plant.isFullyGrown) {
@@ -40,7 +47,14 @@ public class MiniFarm {
         plants.clear();
     }
 
-    public void sellAnimals() {
+    public void sellAnimal(Animal animal) {
+        if (animals.contains(animal)) {
+            bankAccount += animal.value;
+            animals.remove(animal);
+        }
+    }
+
+    public void sellAllAnimals() {
         double sum = 0;
         for (Animal animal : animals) {
             if (!(animal.isHungry())) {
@@ -78,8 +92,9 @@ public class MiniFarm {
         System.out.println(myFarm);
         myFarm.feedAnimals();
         myFarm.growPlants();
-        myFarm.sellAnimals();
-        myFarm.sellPlants();
+        myFarm.sellAnimal(animals.get(1));
         System.out.println(myFarm);
+        myFarm.sellAllAnimals();
+        System.out.println(myFarm);;
     }
 }
