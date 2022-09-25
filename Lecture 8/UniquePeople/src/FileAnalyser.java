@@ -3,8 +3,6 @@ import java.util.Scanner;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-// add equals check //
-
 public class FileAnalyser {
 
     private ArrayList<String> filenames;
@@ -21,9 +19,9 @@ public class FileAnalyser {
                 while(fileReader.hasNextLine()) {
                     String[] info = fileReader.nextLine().split(",");
 
-                    String StringAge = info[1];
-                    int age = Integer.parseInt(StringAge);
+                    int age = Integer.parseInt(info[1]);
                     Person newPerson = new Person(info[0], age, info[2]);
+                    
                     if (!(people.contains(newPerson))) {
                         people.add(newPerson);
                     }

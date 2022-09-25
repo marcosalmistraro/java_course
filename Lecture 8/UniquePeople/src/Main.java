@@ -8,7 +8,8 @@ public class Main {
         files.add("elise.txt");
         files.add("enrique.txt");
         files.add("john.txt");
-        files.add("john_sosia.txt");
+        // this won't be added to the list as contains implements the overriden equals methods
+        files.add("john_sosia.txt"); 
         FileAnalyser fileAnalyser = new FileAnalyser(files);
 
         ArrayList<Person> people = fileAnalyser.buildList();
@@ -16,6 +17,5 @@ public class Main {
         for (Person person : people) {
             System.out.println(person);
         }
-    }
-    
+    }   
 }
