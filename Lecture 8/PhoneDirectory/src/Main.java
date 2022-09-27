@@ -18,16 +18,20 @@ public class Main {
                 break;
             }
 
-            if(input.equals("1")) {
+            else if(input.equals("1")) {
                 UI.addInfo();
             }
 
-            if(input.equals("2")) {
+            else if(input.equals("2")) {
                 UI.findInfo();
             }
 
-            if(input.equals("3")) {
+            else if(input.equals("3")) {
                 UI.printToFile();
+            }
+
+            else {
+                UI.invalidInput();
             }
         }   
     }

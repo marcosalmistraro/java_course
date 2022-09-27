@@ -36,6 +36,11 @@ public class UI {
         System.out.println(getLine());
     }
 
+    public void invalidInput() {
+        System.out.println(getLine());
+        System.out.println("Invalid Input");
+    }
+
     public void addInfo() {
 
         System.out.println(getLine());
