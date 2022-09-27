@@ -1,1 +1,1 @@
-john,230,chicago
+john,23,chicago

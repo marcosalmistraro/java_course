@@ -1,0 +1,20 @@
+These are words originally contained in sample.txt
+The words have been ordered
+----------
+It
+This
+WordSort
+a
+be
+context
+file
+in
+is
+of
+program
+sample
+specific
+that
+the
+too
+used
