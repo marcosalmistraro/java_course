@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,14 +8,14 @@ public class Main {
         ArrayList<Archive> items = new ArrayList<>();
 
         while (true) {
-            System.out.println("Identifier? (empty will stop)");
+            System.out.println("Entry identifier (empty will stop)");
             String identifier = scanner.nextLine();
 
             if (identifier.isEmpty()) {
                 break;
             }
 
-            System.out.println("Name? (empty will stop)");
+            System.out.println("Entry name? (empty will stop)");
             String name = scanner.nextLine();
 
             if (name.isEmpty()) {
@@ -30,7 +29,7 @@ public class Main {
         }
         scanner.close();
 
-        System.out.println("==Items==");
+        System.out.println("== Printing out unique items==");
 
         for (Archive entry : items) {
             System.out.println(entry.getIdentifier() + ": " + entry.getName());

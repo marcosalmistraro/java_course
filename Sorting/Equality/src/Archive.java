@@ -24,7 +24,6 @@ public class Archive {
         } else if (!(compared instanceof Archive)) {
             return false;
         }
-
         Archive comparedArchive = (Archive) compared;
 
         if(this.identifier.equals(comparedArchive.identifier)) {
