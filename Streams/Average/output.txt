@@ -1,0 +1,2 @@
+The calculated average is: 
+226.1
